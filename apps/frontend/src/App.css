@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* On s'assure que la page prend tout l'écran */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
+  display: flex;
+  place-items: center; /* La magie qui centre tout au milieu */
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh; /* 100% de la hauteur de l'écran */
+  background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%); /* Fond sombre moderne */
+  color: #ffffff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
+/* Le style de ta carte */
 .card {
+  background-color: rgba(255, 255, 255, 0.1); /* Effet verre transparent */
+  border-radius: 16px;
   padding: 2em;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Ombre portée */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  width: 90%; /* S'adapte aux mobiles */
 }
 
-.read-the-docs {
-  color: #888;
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  background: -webkit-linear-gradient(#f39c12, #e74c3c); /* Dégradé Orange/Rouge Asia-Food */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #aaa;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2ecc71; /* Vert pour dire que ça marche */
+  margin-top: 10px;
 }
